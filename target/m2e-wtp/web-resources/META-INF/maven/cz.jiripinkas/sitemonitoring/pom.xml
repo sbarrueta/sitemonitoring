@@ -24,6 +24,11 @@
   		<scope>provided</scope>
   	</dependency>
   	
+  	<dependency>
+  		<groupId>org.springframework</groupId>
+  		<artifactId>spring-web</artifactId>
+  	</dependency>
+  	
   	
   </dependencies>
   
@@ -36,6 +41,20 @@
   		</plugin>
   	</plugins>
   </build>
+  
+  
+  <dependencyManagement>
+  	<dependencies>
+  		<dependency>
+  			<groupId>org.springframework</groupId>
+  			<artifactId>spring-framework-bom</artifactId>
+  			<version>4.1.4.RELEASE</version>
+  			<type>pom</type>
+  			<scope>import</scope>
+  		</dependency>
+  	</dependencies>
+  
+  </dependencyManagement>
 
 
 </project>
